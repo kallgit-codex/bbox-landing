@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    allowedHosts: ["bboxweb-production.up.railway.app"],
+  },
   plugins: [
     react()
   ].filter(Boolean),
