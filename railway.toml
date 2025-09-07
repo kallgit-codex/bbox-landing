@@ -1,0 +1,5 @@
+[build]
+baseDirectory = "sleek-simple-impactful.Businessinabox"
+
+[deploy]
+startCommand = "npm start"
