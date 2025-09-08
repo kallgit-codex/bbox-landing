@@ -12,25 +12,25 @@ const AppLayout: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-blue-800 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-slate-900 to-blue-800 text-white py-16 md:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Business-in-a-Box: <span className="text-orange-400">Your Complete Marketing Solution</span>
               </h1>
               <p className="text-xl mb-8 text-blue-100">
                 Stop juggling multiple vendors and services. We combine the best of human expertise with smart AI automation—giving you optimized marketing that actually works, without the agency BS. Focus on what you do best: your business and getting paid.
               </p>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 transform hover:scale-105 shadow-lg">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 transform hover:scale-105 shadow-lg w-full sm:w-auto">
                 Simplify Your Marketing—Talk to Us Today
               </button>
             </div>
             <div className="relative">
-              <img 
+              <img
                 src="https://d64gsuwffb70l.cloudfront.net/68be06c366c485c214e8a2d6_1757284128688_9af740ed.webp"
                 alt="Marketing solution visualization"
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>
           </div>
@@ -38,7 +38,7 @@ const AppLayout: React.FC = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4">
+      <section className="py-16 md:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -49,7 +49,7 @@ const AppLayout: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard 
               icon="🎯"
               title="Lead Generation"
@@ -95,7 +95,7 @@ const AppLayout: React.FC = () => {
       </section>
 
       {/* Human + AI Hybrid Section */}
-      <section className="bg-white py-20 px-4">
+      <section className="bg-white py-16 md:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -106,7 +106,7 @@ const AppLayout: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤖</span>
@@ -143,7 +143,7 @@ const AppLayout: React.FC = () => {
       </section>
 
       {/* Personal Story Section */}
-      <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-gray-50 py-16 md:py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
             <div className="text-center mb-8">
@@ -175,7 +175,7 @@ const AppLayout: React.FC = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gray-50 py-20 px-4">
+      <section className="bg-gray-50 py-16 md:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -186,8 +186,8 @@ const AppLayout: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <TestimonialCard 
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <TestimonialCard
               quote="Kallisti gets it. As a contractor, I don't have time for marketing BS. Their system just works—more calls, better leads, and I can focus on the actual work."
               author="Tom Martinez"
               company="Martinez Plumbing"
@@ -213,7 +213,7 @@ const AppLayout: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-slate-900 text-white py-20 px-4">
+      <section className="bg-slate-900 text-white py-16 md:py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Simplify Your Marketing?
