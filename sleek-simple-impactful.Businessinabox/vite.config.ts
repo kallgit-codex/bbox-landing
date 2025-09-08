@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   preview: {
-    allowedHosts: ["bboxweb-production.up.railway.app"],
+    allowedHosts: ["bboxweb-production.up.railway.app", "bizinabox.one"],
   },
   plugins: [
     react()
